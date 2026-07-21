@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Office Dashboard | Foundation Periodontics and Implants</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="admin-body">
+
+<!-- Login -->
+<div class="admin-login" id="login-view">
+  <div class="admin-login-card">
+    <h1>Office Dashboard</h1>
+    <p>Sign in to view leads and appointment requests.</p>
+    <form id="login-form">
+      <div class="form-field" style="margin-bottom: 14px;">
+        <label for="login-email">Email</label>
+        <input type="email" id="login-email" required autocomplete="username">
+      </div>
+      <div class="form-field" style="margin-bottom: 14px;">
+        <label for="login-password">Password</label>
+        <input type="password" id="login-password" required autocomplete="current-password">
+      </div>
+      <button type="submit" class="btn btn-dark" style="width:100%;">Sign In</button>
+      <p class="admin-error" id="login-error">Incorrect email or password.</p>
+    </form>
+  </div>
+</div>
+
+<!-- Dashboard -->
+<div id="dashboard-view">
+  <header class="admin-header">
+    <div class="container">
+      <span class="brand-name">Foundation &mdash; Office Dashboard</span>
+      <button class="btn btn-outline" id="logout-btn" style="border-color: rgba(255,255,255,0.5);">Sign Out</button>
+    </div>
+  </header>
+
+  <main class="admin-main" id="admin-main">
+    <div class="container">
+
+      <div class="stat-cards">
+        <div class="stat-card">
+          <span class="stat-num" id="stat-leads">&ndash;</span>
+          <span class="stat-label">New Leads</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num" id="stat-appointments">&ndash;</span>
+          <span class="stat-label">New Appointment Requests</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num" id="stat-views">&ndash;</span>
+          <span class="stat-label">Page Views (Last 7 Days)</span>
+        </div>
+      </div>
+
+      <div class="admin-panel">
+        <h2>Appointment Requests</h2>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Received</th>
+              <th>Name</th>
+              <th>Contact</th>
+              <th>Service</th>
+              <th>Preferred</th>
+              <th>Notes</th>
+              <th>Status</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="appointments-table-body">
+            <tr class="empty-row"><td colspan="8">Loading...</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="admin-panel">
+        <h2>Contact Leads</h2>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Received</th>
+              <th>Name</th>
+              <th>Contact</th>
+              <th>Message</th>
+              <th>Status</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="leads-table-body">
+            <tr class="empty-row"><td colspan="6">Loading...</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </main>
+</div>
+
+<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+<script src="js/supabase-config.js"></script>
+<script src="js/supabase-client.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>
