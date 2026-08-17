@@ -1,6 +1,6 @@
 -- Foundation Periodontics and Implants — Supabase schema
 -- Run this once in Supabase → SQL Editor (on your project) to set up the backend.
--- Holds only contact/scheduling info (name, phone, email, requested service/time) —
+-- Holds only contact/scheduling info (name, phone, email, requested service/time) 
 -- never store clinical/patient health information in these tables.
 
 create table if not exists leads (

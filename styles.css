@@ -1,15 +1,15 @@
 /* ===== Foundation Periodontics and Implants ===== */
 
 :root {
-  --color-primary: #1f4d47;      /* deep teal/green - trust, calm */
-  --color-primary-light: #2f6a62;
+  --color-primary: #0f2a44;      /* deep navy - matches logo mark */
+  --color-primary-light: #1e4870;
   --color-accent: #c9a86a;       /* warm gold - premium/care */
   --color-bg: #ffffff;
-  --color-bg-alt: #f6f4ee;
-  --color-text: #23302e;
-  --color-text-light: #5a6663;
-  --color-border: #e3e0d6;
-  --shadow-soft: 0 10px 30px rgba(31, 77, 71, 0.12);
+  --color-bg-alt: #f4f6f8;
+  --color-text: #1c2733;
+  --color-text-light: #5a6b7a;
+  --color-border: #dbe2e8;
+  --shadow-soft: 0 10px 30px rgba(15, 42, 68, 0.12);
   --radius: 10px;
   --font-heading: 'Georgia', 'Times New Roman', serif;
   --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
@@ -138,7 +138,7 @@ section {
 
 .btn-primary {
   background: var(--color-accent);
-  color: #24302e;
+  color: #1c2733;
 }
 
 .btn-primary:hover {
@@ -167,7 +167,7 @@ section {
 
 .topbar {
   background: var(--color-primary);
-  color: #eef2f0;
+  color: #eaeff5;
   font-size: 0.85rem;
 }
 
@@ -182,7 +182,7 @@ section {
 }
 
 .topbar a {
-  color: #eef2f0;
+  color: #eaeff5;
 }
 
 .topbar a:hover {
@@ -321,14 +321,14 @@ nav.main-nav a.active {
 
 /* Sticky header scroll shadow */
 header.site-header.scrolled {
-  box-shadow: 0 4px 18px rgba(31, 77, 71, 0.1);
+  box-shadow: 0 4px 18px rgba(15, 42, 68, 0.1);
 }
 
 /* ===== Hero ===== */
 
 .hero {
   position: relative;
-  background: linear-gradient(160deg, rgba(31,77,71,0.92), rgba(23,54,50,0.94)),
+  background: linear-gradient(160deg, rgba(15,42,68,0.92), rgba(8,22,38,0.94)),
     url('assets/images/office-placeholder.jpg') center/cover no-repeat;
   color: #fff;
   padding: 120px 0 100px;
@@ -350,7 +350,7 @@ header.site-header.scrolled {
 
 .hero p.lead {
   font-size: 1.15rem;
-  color: #dce7e3;
+  color: #dbe4ee;
   margin-bottom: 34px;
   max-width: 560px;
 }
@@ -373,7 +373,7 @@ header.site-header.scrolled {
   align-items: center;
   gap: 10px;
   font-size: 0.88rem;
-  color: #cfe0da;
+  color: #c9d6e6;
 }
 
 .hero-badge .dot {
@@ -427,7 +427,7 @@ header.site-header.scrolled {
 }
 
 .quick-action p {
-  color: #cfe0da;
+  color: #c9d6e6;
   font-size: 0.92rem;
   margin-bottom: 14px;
 }
@@ -671,7 +671,7 @@ header.site-header.scrolled {
 
 .page-banner {
   position: relative;
-  background: linear-gradient(160deg, rgba(31,77,71,0.94), rgba(23,54,50,0.96)),
+  background: linear-gradient(160deg, rgba(15,42,68,0.94), rgba(8,22,38,0.96)),
     url('assets/images/office-placeholder.jpg') center/cover no-repeat;
   color: #fff;
   padding: 76px 0 64px;
@@ -689,7 +689,7 @@ header.site-header.scrolled {
 }
 
 .page-banner p {
-  color: #dce7e3;
+  color: #dbe4ee;
   max-width: 560px;
   margin: 0 auto;
 }
@@ -697,7 +697,7 @@ header.site-header.scrolled {
 .breadcrumb {
   margin-top: 20px;
   font-size: 0.85rem;
-  color: #b8ccc6;
+  color: #b6c7dc;
   display: flex;
   justify-content: center;
   gap: 8px;
@@ -722,7 +722,7 @@ header.site-header.scrolled {
 }
 
 .cta-band p {
-  color: #cfe0da;
+  color: #c9d6e6;
   max-width: 560px;
   margin: 0 auto 32px;
 }
@@ -844,8 +844,8 @@ header.site-header.scrolled {
 /* ===== Footer ===== */
 
 footer.site-footer {
-  background: #172c28;
-  color: #b9c7c2;
+  background: #0a1a2c;
+  color: #b7c4d4;
   padding: 64px 0 28px;
 }
 
@@ -860,10 +860,14 @@ footer.site-footer {
   color: #fff;
 }
 
+.footer-logo {
+  height: 84px;
+}
+
 .footer-brand p {
   margin-top: 14px;
   font-size: 0.9rem;
-  color: #93a49f;
+  color: #90a2b8;
   max-width: 320px;
 }
 
@@ -907,7 +911,7 @@ footer a:hover {
   display: flex;
   justify-content: space-between;
   font-size: 0.82rem;
-  color: #7d8f89;
+  color: #7c8ea3;
   flex-wrap: wrap;
   gap: 8px;
 }
@@ -1073,6 +1077,19 @@ footer a:hover {
 
 .admin-header .brand-name {
   color: #fff;
+}
+
+.admin-header-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+}
+
+.admin-header-brand .logo-img {
+  height: 44px;
 }
 
 .admin-login {
