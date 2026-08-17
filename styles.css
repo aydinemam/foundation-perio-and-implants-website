@@ -241,7 +241,7 @@ header.site-header {
 }
 
 .logo-img {
-  height: 68px;
+  height: 92px;
   width: auto;
   display: block;
 }
@@ -862,6 +862,8 @@ footer.site-footer {
 
 .footer-logo {
   height: 84px;
+  /* Logo mark is navy — invert to white so it reads on the dark footer */
+  filter: brightness(0) invert(1);
 }
 
 .footer-brand p {
@@ -960,7 +962,7 @@ footer a:hover {
   }
 
   .logo-img {
-    height: 50px;
+    height: 64px;
   }
 
   .header-phone,
@@ -1090,6 +1092,7 @@ footer a:hover {
 
 .admin-header-brand .logo-img {
   height: 44px;
+  filter: brightness(0) invert(1);
 }
 
 .admin-login {
